@@ -1,5 +1,6 @@
 # BankSystem 
-# Online Banking Project in PHP
+# Online Banking Project
+
 
 ## Features
 
