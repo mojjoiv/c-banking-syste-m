@@ -1,23 +1,58 @@
 # BankSystem 
-**BankSystem** is an open-source web project where users can create bank accounts, transfer money, create payment cards, pay with them or directly through their account, etc.
-It supports connecting multiple banks together through the _CentralApi_. This allows money to be securely transferred between **separate instances of BankSystem** running on different machines.
+# Online Banking Project in PHP
 
-## Documentation
+## Features
 
-### [Getting started](https://github.com/banksystembg/BankSystem/wiki/Getting-started)
->**This page contains important information on how to properly configure BankSystem and CentralApi**
+- Secure login and signup system with md5 encryption
+- OTP verification 
+- Admin & user panel
+- Withdraw and deposit section
+- Money transfer system
+- KYC verification
+- Email alerts after every transaction
+- Saving page
+- Request debit card 
 
-BankSystem consists of two base components - the bank web application and the _CentralApi_, which securely connects banks running on separate machines together to process [transfers between different banks](https://github.com/banksystembg/BankSystem/wiki/Money-transfers#Global--worldwide-transfers), [card payments](https://github.com/banksystembg/BankSystem/wiki/Cards#Purchases) and [direct payments](https://github.com/banksystembg/BankSystem/wiki/Direct-payments).
+## Design Principle
 
-## Project links
+This principle is completely based on Coupling and Cohesion. This principle states that In your software design a classes should in such a way that each class should have a single purpose/responsibility/functionality.
 
-We have set up a network of two BankSystem instances and one [DemoShop](https://github.com/banksystembg/BankSystem/wiki/DemoShop), connected through a _CentralApi_. This network supports all BankSystem functionality, including [Global transfers](https://github.com/banksystembg/BankSystem/wiki/Money-transfers#global--worldwide-transfers), [Direct payments](https://github.com/banksystembg/BankSystem/wiki/Direct-payments) and [Card payments](https://github.com/banksystembg/BankSystem/wiki/Cards#purchases).
+While designing software if you put more than one functionality in single class then increase coupling between functionalities. If change required in one functionality there are chances to broke other functionality and required more testing to avoid such surprises in production environment.
+
+ Responsibility Examples
+Suppose you are having JPA classes as  SavingAccountRepository.java and CurrentAccountRepository.java then SavingAccountRepository.java class should have only methods and queries related with Saving Accounts. It means your class should specialize in single purpose.
+
+Others most common example of responsibilities:
+
+- Logging
+- Formatting
+- Validation
+- Notification
+- Error Handling
+- Parsing
+- Caching
+- Mapping
+- Class Section/ Instantiation etc.
+
+
+Benefits:
+This principle make your software easier to implement and prevent unexpected side-effects of future changes.
+Your class will change only if anything will change in respected responsibility.
+Need to update dependencies and compile when some respected dependencies change.
+Reduce coupling between software and components.
+The Single Responsibility Principle (SRP) also provides other benefits with classes, components and micro services with single responsibility make your code easier to explain, understand, implement. It also improves development speed and easier to track bugs. it should encapsulate that part. All of that module, class or function's services should be narrowly aligned with that responsibility
+
+## The methodology used is Agile Methodology
+
+ Agile methods break tasks into smaller iterations, or parts do not directly involve long term planning. The project scope and requirements are laid down at the beginning of the development process. Plans regarding the number of iterations, the duration and the scope of each iteration are clearly defined in advance.
+
+
+
 
 |Project |Address
 |-|-
-|**DemoShop** |https://banksystem-demoshop.herokuapp.com/
 |**Test Bank 1** <br><br> **Transfer details:** <br> * Bank name - _Bank system_ <br> * Bank country - _Germany_ <br> * Bank code - _ABC_ |https://banksystem-1.herokuapp.com/
-|**Test Bank 2** <br><br> **Transfer details:** <br> * Bank name - _Bank system 2_ <br> * Bank country - _Netherlands_ <br> * Bank code - _CBA_ |https://banksystem-2.herokuapp.com/
+
 
 All of these projects have a demo account already registered:
 
