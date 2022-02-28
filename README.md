@@ -61,26 +61,8 @@ All of these projects have a demo account already registered:
 |-----------------	|----------
 | test@test.com         | Test123$
 
-Additionally, all bank accounts created have an initial balance of €500 for demonstration purposes.
+Additionally, all bank accounts created have an initial balance of kshs500 for demonstration purposes.
 
-
-
-### [Bank accounts](https://github.com/banksystembg/BankSystem/wiki/Bank-accounts)
-Bank accounts hold information about their owner, balance, transactions, date of creation, etc.
-
-### [Money transfers](https://github.com/banksystembg/BankSystem/wiki/Money-transfers)
-BankSystem supports two types of money transfers - internal and global / worldwide.
-
-### [Cards](https://github.com/banksystembg/BankSystem/wiki/Cards)
-Cards are used for making purchases on other websites using the _CentralApi_.
-
-### [Direct payments](https://github.com/banksystembg/BankSystem/wiki/Direct-payments)
-Direct payments are a way to securely pay on websites directly through a bank account without the need to provide card details.
-
-
-### [User settings](https://github.com/banksystembg/BankSystem/wiki/User-settings)
-
-### [Bank administration](https://github.com/banksystembg/BankSystem/wiki/Bank-administration)
 
 ***
 
